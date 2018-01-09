@@ -230,8 +230,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-colour{color: #404040!important}
 .w3-bar{background: #ffffff!important}
 .align{font-size: 18.5px}
-.box{background:#AED0CC!important; padding: 3px; margin-left: 20%; margin-right: 20%; margin-right: 8px}
+.box{background:#AED0CC!important; padding: 3px; margin-left: 20%; margin-right: 20%}
+.large-box{background:#AED0CC!important; padding: 3px; margin-left: 10%; margin-right: 10%}
 .highlight{background:#AED0CC!important}
+.extra-margin{margin-bottom: 10px}
 
 #nav {
 text-align:center;
