@@ -55,37 +55,48 @@
       </div>
     </div>
 
-    <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about">
-      <h3 class="w3-center">ABOUT ME</h3>
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">CONTACT ME</h3>
       <p class="w3-center box"><em></em></p>
-      <p>I am a fully qualified and registered child and adolescent psychotherapist with a Masters degree in Psychodynamic Counselling and Psychotherapy with Children and Adolescents from Birkbeck College, University of London.
-      </br>
-      </br>
-      My clinical experience includes working in Primary Care clinics and charity, private and school settings with children and young people aged from 4-24. I have worked extensively with bereavement/loss, and with young people experiencing low mood and who may be at risk.
-      </p>
-      <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-          <!-- <p><b><i class="w3-margin-right"></i>Hedy-anne Freedman</b></p><br> -->
-          <img src="photo.jpg" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
-        </div>
 
-        <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-padding-large">
-          <p>My CPD (continued professional development) training includes Working with Trauma (The Tavistock and Portman), Working with Eating Disorders and Body Dysmorphia (The Tavistock and Portman) and the year Foundation Course at The Institute of Psychoanalysis, London.
-          </br>
-          </br>
-            I am a registered member of the British Asssociation of Counselling and Psychotherapy (BACP) and the BPC (British Psychoanalytic Council) and abide by their codes of ethics. I have full professional liability insurance cover and up to date DBS (Disclosure and Barring Service) Certificate.
-          </p>
+      <p>If you would like to discuss making an appointment for an initial consultation please phone me on <a href="tel:07480-062-214">07480 062 214</a> or email me at <a href="mailto:hedyanne@icloud.com">hedyanne@icloud.com</a>.</p>
+
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <!-- Add Google Maps -->
+          <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
         </div>
-        <p class="w3-center"><img src="logo.jpg" class="w3-small-image"></p>
+        <div class="w3-col m8 w3-panel">
+          <p>My private practice is at:</br>999 Medical Centre</br>997 Finchley Road</br>London NW11 7HB</p>
+          <p>Golders Green underground station is within walking distance and there are several bus routes.  Street parking is available. There is a waiting room.</p>
+        </div>
       </div>
     </div>
 
     <footer class="w3-center w3-haf-colour w3-opacity w3-text-black" style="padding:1px">
       <p style="font-size:12px; color:w3-text-black">copyright © 2018 <a href="http://tamarlehmann.co.uk" target="_blank" class="w3-text-black">Tamar Lehmann</a></p>
     </footer>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh5WgQMeXbYkkd6ySfut06XMOeoEmBj5s&callback=myMap">
+    </script>
     <script>
+    function myMap()
+    {
+      myCenter=new google.maps.LatLng(51.5781, -0.1979);
+      var mapOptions= {
+        center:myCenter,
+        zoom:15, scrollwheel: false, draggable: true,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: myCenter,
+      });
+      marker.setMap(map);
+    }
 
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
