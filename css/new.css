@@ -217,11 +217,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /*custom*/
 
-.w3-display-title{position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.w3-display-info{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.w3-display-info-2{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.w3-display-info-3{position:absolute;top:60%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.w3-display-info-4{position:absolute;top:65%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-title{position:fixed;top:30%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-info{position:fixed;top:40%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-info-2{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-info-3{position:fixed;top:60%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-info-4{position:fixed;top:65%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
 .w3-min{letter-spacing:1px}
 .bgimg-3,.bgimg-2{background-color: #AED0CC!important}
 .w3-haf-colour{background-color:#AED0CC!important}
