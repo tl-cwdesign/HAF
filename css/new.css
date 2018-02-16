@@ -246,3 +246,9 @@ display:inline;
 #nav a {
 text-decoration:none;
 }
+
+.shadow {
+  -webkit-box-shadow: 0 8px 6px -6px #999!important;
+   -moz-box-shadow: 0 8px 6px -6px #999!important;
+        box-shadow: 0 8px 6px -6px #999!important;
+}
